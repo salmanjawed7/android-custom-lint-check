@@ -1,0 +1,15 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm'
+    id 'com.android.lint'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+dependencies {
+    compileOnly 'com.android.tools.lint:lint-api:30.4.2'
+    compileOnly 'com.android.tools.lint:lint-checks:30.4.2'
+    testImplementation 'com.android.tools.lint:lint-tests:30.4.2'
+}
